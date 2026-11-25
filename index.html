@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Academy - Student Registration</title>
+</head>
+<body>
+
+    <header>
+        <h1>Programming Academy</h1>
+        <h2>Student Registration</h2>
+        <p>Please fill out the form below to create your student account.</p>
+    </header>
+
+    <hr>
+
+    <!-- عند الإرسال سينتقل تلقائياً إلى الصفحة الثانية -->
+    <form action="learning-path.html" method="GET">
+
+        <!-- 1. البيانات الشخصية وتاريخ الميلاد -->
+        <fieldset>
+            <legend><strong>Personal Information</strong></legend>
+
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="01xxxxxxxxx" required><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </fieldset>
+
+        <br>
+
+        <!-- 2. بيانات تسجيل الدخول -->
+        <fieldset>
+            <legend><strong>Login Details</strong></legend>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
+
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" placeholder="Choose a username" required><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Create a strong password" required>
+        </fieldset>
+
+        <br>
+
+        <!-- 3. الخلفية البرمجية والكورس المطلوب -->
+        <fieldset>
+            <legend><strong>Programming Background</strong></legend>                        
+
+            <!-- لغة برمجة واحدة فقط (Radio) -->
+            <p><strong>Favorite Programming Language (Choose one):</strong></p>
+            <input type="radio" id="lang_python" name="fav_language" value="Python" required>
+            <label for="lang_python">Python</label><br>
+
+            <input type="radio" id="lang_js" name="fav_language" value="JavaScript">
+            <label for="lang_js">JavaScript</label><br>
+
+            <input type="radio" id="lang_cpp" name="fav_language" value="C++">
+            <label for="lang_cpp">C++</label><br>
+
+            <input type="radio" id="lang_java" name="fav_language" value="Java">
+            <label for="lang_java">Java</label><br><br>
+
+            <!-- أكثر من تقنية (Checkbox) -->
+            <p><strong>Technologies You Know (Select all that apply):</strong></p>
+            <input type="checkbox" id="tech_html" name="technologies" value="HTML">
+            <label for="tech_html">HTML</label><br>
+
+            <input type="checkbox" id="tech_css" name="technologies" value="CSS">
+            <label for="tech_css">CSS</label><br>
+
+            <input type="checkbox" id="tech_git" name="technologies" value="Git & GitHub">
+            <label for="tech_git">Git &amp; GitHub</label><br>
+
+            <input type="checkbox" id="tech_sql" name="technologies" value="SQL">
+            <label for="tech_sql">SQL</label><br>
+
+            <input type="checkbox" id="tech_none" name="technologies" value="None">
+            <label for="tech_none">None (Complete Beginner)</label><br><br>
+
+            <!-- المستوى في البرمجة -->
+            <label for="level"><strong>Your Programming Level:</strong></label><br>
+            <select id="level" name="level" required>
+                <option value="" disabled selected>-- Select your level --</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select><br><br>
+
+            <!-- الكورس الذي يرغب في دراسته -->
+            <label for="desired_course"><strong>Course You Want to Study:</strong></label><br>
+            <select id="desired_course" name="desired_course" required>
+                <option value="" disabled selected>-- Choose a course --</option>
+                <option value="web_dev">Full-Stack Web Development</option>
+                <option value="mobile_dev">Mobile App Development</option>
+                <option value="data_science">Data Science &amp; AI</option>
+                <option value="cyber_security">Cyber Security</option>
+            </select><br><br>
+
+            <!-- نبذة قصيرة -->
+            <label for="bio"><strong>Short Bio &amp; Your Goals from Learning Programming:</strong></label><br>
+            <textarea id="bio" name="bio" rows="5" cols="45" placeholder="Tell us about yourself and what you hope to achieve..." required></textarea>
+        </fieldset>
+
+        <br>
+
+        <!-- زر الانتقال للصفحة الثانية -->
+        <button type="submit">Register &amp; Continue to Learning Path &rarr;</button>
+        <button type="reset">Clear Form</button>
+
+    </form>
+
+</body>
+</html>

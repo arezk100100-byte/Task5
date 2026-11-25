@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Academy - Choose Your Learning Path</title>
+</head>
+<body>
+
+    <header>
+        <h1>Programming Academy</h1>
+        <h2>Choose Your Learning Path</h2>
+        <p>Welcome! Your registration is complete. Now, customize your study plan below.</p>
+    </header>
+
+    <hr>
+
+    <form action="#" method="POST">
+
+        <!-- 1. اختيار المسار (اختيار واحد فقط) -->
+        <fieldset>
+            <legend><strong>Choose Your Track</strong></legend>
+
+            <input type="radio" id="track_fe" name="track" value="Front-End" required>
+            <label for="track_fe">Front-End</label><br>
+
+            <input type="radio" id="track_be" name="track" value="Back-End">
+            <label for="track_be">Back-End</label><br>
+
+            <input type="radio" id="track_uiux" name="track" value="UI/UX">
+            <label for="track_uiux">UI/UX</label><br>
+
+            <input type="radio" id="track_mobile" name="track" value="Mobile Development">
+            <label for="track_mobile">Mobile Development</label>
+        </fieldset>
+
+        <br>
+
+        <!-- 2. اختيار الكورسات (إمكانية اختيار أكثر من كورس) -->
+        <fieldset>
+            <legend><strong>Choose Your Courses</strong></legend>
+
+            <input type="checkbox" id="course_html" name="courses" value="HTML">
+            <label for="course_html">HTML</label><br>
+
+            <input type="checkbox" id="course_css" name="courses" value="CSS">
+            <label for="course_css">CSS</label><br>
+
+            <input type="checkbox" id="course_js" name="courses" value="JavaScript">
+            <label for="course_js">JavaScript</label><br>
+
+            <input type="checkbox" id="course_react" name="courses" value="React">
+            <label for="course_react">React</label><br>
+
+            <input type="checkbox" id="course_node" name="courses" value="Node.js">
+            <label for="course_node">Node.js</label><br>
+
+            <input type="checkbox" id="course_mongo" name="courses" value="MongoDB">
+            <label for="course_mongo">MongoDB</label>
+        </fieldset>
+
+        <br>
+
+        <!-- 3. وقت الدراسة المفضل -->
+        <fieldset>
+            <legend><strong>Choose Your Preferred Study Time</strong></legend>
+
+            <input type="radio" id="time_morning" name="study_time" value="Morning" required>
+            <label for="time_morning">Morning</label><br>
+
+            <input type="radio" id="time_afternoon" name="study_time" value="Afternoon">
+            <label for="time_afternoon">Afternoon</label><br>
+
+            <input type="radio" id="time_evening" name="study_time" value="Evening">
+            <label for="time_evening">Evening</label>
+        </fieldset>
+
+        <br>
+
+        <!-- 4. طريقة التعلم المفضلة -->
+        <fieldset>
+            <legend><strong>How do you prefer to learn?</strong></legend>
+
+            <input type="radio" id="mode_online" name="learning_mode" value="Online" required>
+            <label for="mode_online">Online</label><br>
+
+            <input type="radio" id="mode_campus" name="learning_mode" value="On Campus">
+            <label for="mode_campus">On Campus</label>
+        </fieldset>
+
+        <br>
+
+        <!-- 5. سبب اختيار المسار -->
+        <fieldset>
+            <legend><strong>Why did you choose this track?</strong></legend>
+
+            <label for="reason">Write a brief note explaining your choice:</label><br>
+            <textarea id="reason" name="reason" rows="5" cols="45" placeholder="I chose this track because..." required></textarea>
+        </fieldset>
+
+        <br>
+
+        <!-- زر الإرسال النهائي -->
+        <button type="submit">Submit Application</button>
+        <a href="register.html">Back to Registration</a>
+
+    </form>
+
+</body>
+</html>
